@@ -22,7 +22,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-API_BASE = "http://localhost:8000"
+API_BASE = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 # ─── CSS ─────────────────────────────────────────────────────────────────────
 st.markdown("""
